@@ -1,0 +1,108 @@
+/* components/About.css */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: var(--gray-color);
+}
+
+.about-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  max-width: 500px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: var(--light-color);
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+  height: 400px;
+}
+
+.design-element {
+  position: absolute;
+  border-radius: 20px;
+}
+
+.design-element:nth-child(1) {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  top: 0;
+  right: 0;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.design-element:nth-child(2) {
+  width: 200px;
+  height: 200px;
+  background: var(--accent-color);
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.design-element:nth-child(3) {
+  width: 150px;
+  height: 150px;
+  background: var(--light-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+  z-index: 3;
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .stat h3 {
+    font-size: 2rem;
+  }
+  
+  .about-image {
+    height: 300px;
+  }
+}
