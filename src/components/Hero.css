@@ -84,8 +84,7 @@
   position: absolute;
   width: 100%;
   height: 108%;
-  background: url(IMG_20230226_194020.jpg);
-  background-size: 30pc;
+  background: url('../assets/benoo.png') center / cover no-repeat;
   border-radius: 10% 70% 70% 30% / 30% 30% 70% 70%;
   border: 10px solid rgba(255, 255, 255, 0.05);
 }
